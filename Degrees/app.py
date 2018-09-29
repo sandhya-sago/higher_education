@@ -9,10 +9,35 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
-@app.route("/graphs_page.html")
+@app.route("/graphs")
 def graphs():
     """Return the graphs page."""
     return render_template("graphs_page.html")
+
+@app.route("/geomap")
+def geomap():
+    """Return the geo map page."""
+    return render_template("geo-map.html")
+
+@app.route("/degrees")
+def degrees():
+    """Return the degrees page."""
+    return render_template("degrees.html")
+
+@app.route("/new-page")
+def new():
+    """Return the new page."""
+    return render_template("new-page.html")
+
+@app.route("/new-page2")
+def new2():
+    """Return the other new page."""
+    return render_template("new-page2.html")
+
+@app.route("/conclusions")
+def conclusions():
+    """Return the conclusions page."""
+    return render_template("conclusions_page.html")
 
 
 # @app.route("/apis")
