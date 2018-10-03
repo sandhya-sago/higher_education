@@ -19,3 +19,7 @@ h5py==2.7.0
 Pillow==4.2.1
 tensorflow==1.1.0
 Keras==2.1.5
+dash==0.27.0
+dash-core-components==0.30.2
+dash-html-components==0.13.2
+dash-renderer==0.14.1
