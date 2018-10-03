@@ -4,10 +4,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
-#import sys
-#import os
-#sys.path.append( os.path.abspath(os.path.join(os.path.dirname(__file__), 'neas_viz')))
-#print(sys.path)
+
 from  .neas_viz import questionaire
 from  .neas_viz import data_processing
 
@@ -26,6 +23,7 @@ app.layout = html.Div(children=[
     html.A(html.Button("GRAPHS", className="btn btn-outline-dark btn-lg"), href='graphs'),
     html.A(html.Button("GEO MAPS", className="btn btn-outline-dark btn-lg"), href='geomap'),
     html.A(html.Button("DEGREES", className="btn btn-outline-dark btn-lg"), href='degrees'),
+    html.A(html.Button("MACHINE", className="btn btn-outline-dark btn-lg"), href='new-page'),
     html.A(html.Button("CONCLUSIONS", className="btn btn-outline-dark btn-lg"), href='conclusions'),
     html.Div([
         html.H1(children=["National Education and Attainment Survey (NEAS)"]), 
