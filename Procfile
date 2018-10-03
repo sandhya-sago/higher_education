@@ -1,1 +1,1 @@
-web: gunicorn Degrees.app:app
+web: gunicorn Degrees.app:server
