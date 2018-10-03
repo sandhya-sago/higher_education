@@ -8,8 +8,8 @@ import sys
 import os
 sys.path.append( os.path.abspath(os.path.join(os.path.dirname(__file__), 'neas_viz')))
 print(sys.path)
-from  neas_viz import questionaire
-from  neas_viz import data_processing
+from  .neas_viz import questionaire
+from  .neas_viz import data_processing
 
 server = Flask(__name__)
 # Initialize Dash and setup the dashboard
