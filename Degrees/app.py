@@ -4,7 +4,10 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
-sys.path.append( os.path.abspath(os.path.join(os.path.dirname(__file__), 'Degrees','neas_viz')))
+import sys
+import os
+sys.path.append( os.path.abspath(os.path.join(os.path.dirname(__file__), 'neas_viz')))
+print(sys.path)
 from  neas_viz import questionaire
 from  neas_viz import data_processing
 
